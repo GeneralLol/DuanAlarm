@@ -1,19 +1,9 @@
 from time import sleep
-from aiy.voicehat import *
+#from aiy.voicehat import *
+import subprocess
 
 def main():
-    button = get_button()
-    led    = get_led()
-    
-    led.set_state(LED.ON)
-    
-    try:
-        while True:
-            pass
-    except:
-        
-        print ("End of program!")
-    
+    subprocess.Popen(["vlc", "radiostream.pls"], shell = True)
     
 if (__name__ == '__main__'):
     main()
